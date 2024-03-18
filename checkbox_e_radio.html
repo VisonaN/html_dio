@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox e Radio</title>
+</head>
+<body>
+    <h1>checkbox e Radio</h1>
+
+    <form method="get">
+        <h3>Você Selecionou: Pizza de Calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcionais[]" value="quiejo"> + queijo <br>
+        <input type="checkbox" name="opcionais[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" disabled name="opcionais[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcionais[]" value="azeitona"> + azeitona <br>
+        <!--O atributo disabled comom diz o nome, deixa a opção desabilitada para selecionar (Inacessível)-->
+        <!--Colocar "opcionais[]" mostra pra linguagem de back-end que opcionais não foi trocado e assumiu o valor final que nesse caso seria azeitona, mas mostra que o valor de opcionais é uma lista-->
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda recheada" value="Sim"> Sim <br>
+        <input type="radio" name="borda recheada" value="Não"> Não <br>
+        <!--Radio button tem que colocar o mesmo nome pois ele só pode ter um valor, ou é sim ou é não, e colocando o mesmo nome ele vai enviar o valor que estiver selecionado-->
+        <p>Bebida</p>
+        <input type="radio" name="bebidas" value="Suco natural"> Suco natural <br>
+        <input type="radio" name="bebidas" value="Refrigerante"> Refrigerante <br>
+        <input type="radio" name="bebidas" value="Água"> Água <br>
+        <input type="radio" name="bebidas" value="Nenhum"> Nenhum <br> <br>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
